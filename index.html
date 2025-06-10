@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAKE SUSHI - Fresh, Quality Sushi Awaits</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-800">
+
+    <!-- Header Section -->
+   <header class="bg-white py-4 md:py-6 sticky top-0 z-50 rounded-b-xl header-shadow">
+  <div class="container mx-auto px-4 flex justify-between items-center">
+    <div class="text-4xl font-extrabold text-green-700">SAKE SUSHI</div>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-8">
+      <a href="index.html" class="text-gray-700 hover:text-green-600 font-semibold transition duration-300">Home</a>
+      <a href="/menu.html" class="text-gray-700 hover:text-green-600 font-semibold transition duration-300">Menu</a>
+      <a href="#featured" class="text-gray-700 hover:text-green-600 font-semibold transition duration-300">Featured</a>
+      <a href="#about" class="text-gray-700 hover:text-green-600 font-semibold transition duration-300">About Us</a>
+      <a href="#testimonial" class="text-gray-700 hover:text-green-600 font-semibold transition duration-300">Testimonial</a>
+      <a href="#contact" class="text-gray-700 hover:text-green-600 font-semibold transition duration-300">Contact</a>
+    </nav>
+
+    <!-- Hamburger Button -->
+    <button id="mobile-menu-toggle" class="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-green-500 transition duration-200">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <nav id="mobile-nav" class="md:hidden hidden flex-col bg-white px-4 pb-4 space-y-2 text-center shadow-md">
+    <a href="#home" class="block text-gray-700 hover:text-green-600 font-semibold">Home</a>
+    <a href="/menu.html" class="block text-gray-700 hover:text-green-600 font-semibold">Menu</a>
+    <a href="#featured" class="block text-gray-700 hover:text-green-600 font-semibold">Featured</a>
+    <a href="#about" class="block text-gray-700 hover:text-green-600 font-semibold">About Us</a>
+    <a href="#testimonial" class="block text-gray-700 hover:text-green-600 font-semibold">Testimonial</a>
+    <a href="#contact" class="block text-gray-700 hover:text-green-600 font-semibold">Contact</a>
+  </nav>
+</header>
+
+    <main class="relative z-0">
+        <!-- Hero Section -->
+       <section class="relative h-[80vh] flex items-center justify-center text-white overflow-hidden">
+  <!-- Background Image -->
+  <div class="absolute inset-0 z-0">
+    <img src="https://images.unsplash.com/photo-1653565083215-40b5f3f7d391?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sushi Background" class="w-full h-full object-cover object-center">
+    <!-- Optional overlay for contrast -->
+    <div class="absolute inset-0 bg-black/60"></div>
+  </div>
+
+  <!-- Foreground Content -->
+  <div class="relative z-10 text-center px-6 max-w-4xl fade-in-on-scroll">
+    <p class="text-lg md:text-2xl font-light tracking-wide mb-4 uppercase text-gray-200">
+      Welcome to
+    </p>
+    <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight leading-tight drop-shadow-md">
+      Sake Sushi <br> Fresh, Quality Sushi Awaits
+    </h1>
+    <button onclick="window.location.href='menu.html'" class="bg-red-500 hover:bg-red-600 transition-all duration-300 text-white font-semibold py-3 px-8 rounded-full shadow-xl text-lg">
+      Explore Our Menu
+    </button>
+  </div>
+</section>
+
+
+        <!-- Featured Selections Section -->
+        <section id="featured" class="container mx-auto px-4 py-16">
+            <h2 class="text-4xl section-title text-center mb-6 fade-in-on-scroll">Explore Our Featured Selections!</h2>
+            <p class="text-xl subtitle text-center mb-12 fade-in-on-scroll">Hand-picked dishes crafted with passion and fresh ingredients.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Featured Item 1 -->
+                <div class="card-effect rounded-xl p-6 flex flex-col items-center text-center fade-in-on-scroll">
+                    <img src="https://140067262.cdn6.editmysite.com/uploads/1/4/0/0/140067262/F6I5WH7JCJLVXRAPXAVKG6HO.jpeg?width=2560&optimize=medium" alt="Nigiri Set" class="menu-item-img mb-4 shadow-sm">
+                    <h3 class="text-2xl font-semibold mb-2 text-green-800">Fish Katsu Bento</h3>
+                    <p class="text-gray-600 mb-4">Crispy breaded fish fillet served with rice, pickles, salad, and savory dipping sauce in a classic bento box.</p>
+                    <span class="text-green-600 font-bold text-2xl">$15.95</span>
+                </div>
+                <!-- Featured Item 2 -->
+                <div class="card-effect rounded-xl p-6 flex flex-col items-center text-center fade-in-on-scroll">
+                    <img src="https://140067262.cdn6.editmysite.com/uploads/1/4/0/0/140067262/Q5VVQPNFJCVFUSGRRHFMNLCT.jpeg?width=2400&optimize=medium" alt="Dragon Roll" class="menu-item-img mb-4 shadow-sm">
+                    <h3 class="text-2xl font-semibold mb-2 text-green-800">Avocado Roll</h3>
+                    <p class="text-gray-600 mb-4">Fresh avocado wrapped in seasoned rice and seaweed, simple, creamy, and delicious.</p>
+                    <span class="text-green-600 font-bold text-2xl">$5.95</span>
+                </div>
+                <!-- Featured Item 3 -->
+                <div class="card-effect rounded-xl p-6 flex flex-col items-center text-center fade-in-on-scroll">
+                    <img src="https://140067262.cdn6.editmysite.com/uploads/1/4/0/0/140067262/BPQAJOUFRDU62EOUASA3L6FV.jpeg?width=2560&optimize=medium" alt="Sashimi Platter" class="menu-item-img mb-4 shadow-sm">
+                    <h3 class="text-2xl font-semibold mb-2 text-green-800">Kani Salad</h3>
+                    <p class="text-gray-600 mb-4">Shredded crab sticks with cucumber and creamy mayo, topped with tobiko and sesame seeds.</p>
+                    <span class="text-green-600 font-bold text-2xl">$3.75</span>
+                </div>
+            </div>
+
+              <!-- Full Menu Button -->
+  <div class="mt-12 text-center fade-in-on-scroll">
+    <a href="menu.html" class="inline-block bg-red-500 hover:bg-red-600 transition duration-300 text-white font-semibold py-3 px-8 rounded-full shadow-lg text-lg">
+      View Full Menu
+    </a>
+  </div>
+</section>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="bg-gray-50 py-16">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 flex justify-center fade-in-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1742185045671-04a8b018451a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="SAKE SUSHI Kitchen" class="rounded-xl shadow-lg transition duration-300 hover:shadow-xl">
+                </div>
+                <div class="md:w-1/2 text-center md:text-left fade-in-on-scroll">
+                    <h2 class="text-4xl section-title mb-6">About Us</h2>
+                    <p class="text-lg text-gray-700 mb-4">
+                        Welcome to Sake Sushi, a cozy all-you-can-eat sushi spot at 2347 86th St, Brooklyn, NY 11214.
+Renowned for its fresh quality and generous portions, it's a local favorite for both lunch ($19.95) and dinner ($29).
+                    </p>
+                    <p class="text-lg text-gray-700">
+                       
+Sushi lovers praise the perfect fish-to-rice ratio and expertly crafted rolls.
+“The best AYCE sushi spot in the tri-state,” says Chelsea L.
+The atmosphere is warm and family-friendly, with attentive service throughout.
+Options include vegan dishes and a few vegetarian choices.
+Enjoy wheelchair access, indoor/outdoor seating, and a relaxed vibe.
+Payments are easy—credit cards, Apple Pay, and Android Pay are accepted.
+Takeout and delivery make it easy to enjoy from home.
+Happy hour specials add extra value and fun.
+For a quieter experience, visit Mon–Thu during off-peak hours.
+Call (718) 996-6288 to reserve your table and savor sushi bliss.
+
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonial" class="py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl section-title mb-6 fade-in-on-scroll">What Our Guests Say</h2>
+                <p class="text-xl subtitle text-center mb-12 fade-in-on-scroll">Hear directly from those who've experienced SAKE SUSHI.</p>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="card-effect rounded-xl p-8 text-center fade-in-on-scroll">
+                        <p class="text-lg text-gray-700 mb-6 italic">"SAKE SUSHI is my go-to for authentic Japanese cuisine in Brooklyn. The fish is always incredibly fresh, and the rolls are simply perfection. The ambiance is so calm and inviting, perfect for a relaxed dinner."</p>
+                        <p class="font-semibold text-green-700">- Jessica L.</p>
+                        <p class="text-gray-500 text-sm">Local Foodie</p>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="card-effect rounded-xl p-8 text-center fade-in-on-scroll">
+                        <p class="text-lg text-gray-700 mb-6 italic">"Every visit to SAKE SUSHI feels like a mini-getaway to Japan. The attention to detail in every dish, from the delicate nigiri to the flavorful ramen, is truly outstanding. Highly recommend their Chef's Special!"</p>
+                        <p class="font-semibold text-green-700">- Mark S.</p>
+                        <p class="text-gray-500 text-sm">Long-time Customer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Contact & Map Section -->
+        <section id="contact" class="py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl section-title mb-6 fade-in-on-scroll">Visit Us</h2>
+                <p class="text-xl subtitle text-center mb-12 fade-in-on-scroll">Find SAKE SUSHI and experience our culinary delights.</p>
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                    <div class="text-left space-y-6 fade-in-on-scroll">
+                        <div>
+                            <h3 class="text-2xl font-semibold text-green-800 mb-2">Location</h3>
+                            <p class="text-lg text-gray-700">2347 86th St, Brooklyn, NY 11214</p>
+                            <a href="https://maps.app.goo.gl/ooWXvT62uGkH81s48" target="_blank" class="text-green-600 hover:underline font-medium mt-2 inline-block">Get Directions &rarr;</a>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-green-800 mb-2">Hours</h3>
+                            <p class="text-lg text-gray-700">Mon - Sat: 11:00 AM - 10:00 PM</p>
+                            <p class="text-lg text-gray-700">Sunday: 11:00 AM - 10:00 PM</p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-green-800 mb-2">Contact</h3>
+                            <p class="text-lg text-gray-700">Phone: <a href="tel:+12125551234" class="text-green-600 hover:underline">+17189966288</a></p>
+                            <p class="text-lg text-gray-700">Email: <a href="mailto:info@sakesushi.com" class="text-green-600 hover:underline">krishnawattt@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="map-container w-full fade-in-on-scroll">
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6058.70506570239!2d-73.990303!3d40.600045!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2450721bf0dfb%3A0xf190bc2971b6b672!2sSake%20Sushi!5e0!3m2!1sen!2sus!4v1749536628941!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-12 rounded-t-xl">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-green-400">SAKE SUSHI</h3>
+                    <p class="text-gray-400 text-sm">Bringing the authentic taste of Japan to Brooklyn with fresh ingredients and culinary artistry.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#menu" class="text-gray-400 hover:text-white transition duration-300">Menu</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="text-gray-400">123 Sushi Lane, Brooklyn, NY 11201</p>
+                    <p class="text-gray-400 mt-2">info@sakesushi.com</p>
+                    <p class="text-gray-400">(212) 555-1234</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-center">
+                <p class="text-gray-500">&copy; 2025 SAKE SUSHI. All rights reserved. <br> Made with ❤️ by Aditya</p>
+                <div class="mt-4 flex justify-center space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for scroll-triggered fade-in effect
+        const fadeElements = document.querySelectorAll('.fade-in-on-scroll');
+
+        const observerOptions = {
+            root: null, // relative to the viewport
+            rootMargin: '0px',
+            threshold: 0.1 // 10% of element visible
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target); // Stop observing once it's visible
+                }
+            });
+        }, observerOptions);
+
+        fadeElements.forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle (basic example, typically this would open a side menu)
+        const toggleButton = document.getElementById('mobile-menu-toggle');
+  const mobileNav = document.getElementById('mobile-nav');
+
+  toggleButton.addEventListener('click', () => {
+    mobileNav.classList.toggle('hidden');
+  });
+    </script>
+</body>
+</html>
